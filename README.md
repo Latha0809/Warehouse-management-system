@@ -50,3 +50,28 @@ The system solves real-world problems like stock mismatch, poor visibility, and 
 - Transaction analysis (IN vs OUT)
 - Pending purchase orders
 
+## 📸 Project Screenshots
+
+### Dashboard & Product Table
+![Dashboard](screenshots/dashboard_product_table.png)
+
+### Inventory Table
+![Inventory](screenshots/inventory_table.png)
+
+### Total Stock per Product
+![Stock](screenshots/total_stock_perproduct.png)
+
+### Stock per Warehouse
+![Warehouse](screenshots/stock_per_warehouse.png)
+
+### Low Stock Alerts
+![Alerts](screenshots/low_stock_Alerts.png)
+
+### Add New Product
+![Add Product](screenshots/add_new_product.png)
+
+### Add New Purchase Order
+![Add Order](screenshots/add_new_purchase_order.png)
+
+### Pending Purchase Orders
+![Orders](screenshots/pending_purchase_order.png)
