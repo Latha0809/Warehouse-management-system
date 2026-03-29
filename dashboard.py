@@ -3,11 +3,10 @@ import streamlit as st
 import pandas as pd
 import mysql.connector
 
-# 🎨 CSS THEME + ANIMATION (ADDED)
 st.markdown("""
 <style>
 
-/* 🌌 Dark Blue Background */
+/*Dark Blue Background */
 [data-testid="stAppViewContainer"] {
     background-color: #0b1d51;
     color: white;
@@ -18,7 +17,7 @@ st.markdown("""
     background-color: #1a2a70;
 }
 
-/* ✨ Fade-in + Slide-up Animation */
+/* Fade-in + Slide-up Animation */
 @keyframes fadeSlideUp {
     0% {
         opacity: 0;
@@ -30,7 +29,7 @@ st.markdown("""
     }
 }
 
-/* 🎯 Main Title Styling */
+/* Main Title Styling */
 h1 {
     color: #00ffff;
     text-align: center;
@@ -58,7 +57,7 @@ h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-# 1️⃣ Connect to MySQL
+# 1️ Connect to MySQL
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -67,7 +66,7 @@ conn = mysql.connector.connect(
 )
 cursor = conn.cursor(dictionary=True)
 
-# 2️⃣ Dashboard Title (animation applies here)
+# 2️ Dashboard Title (animation applies here)
 st.title("📦 Inventory & Warehouse Management Dashboard")
 st.write("Manage products, warehouses, stock, transactions, and purchase orders interactively.")
 
@@ -119,9 +118,7 @@ purchase_orders_df = load_table("""
 """)
 st.dataframe(purchase_orders_df)
 
-# -----------------------
-# 4️⃣ Charts
-# -----------------------
+# 4️ Charts
 
 st.subheader("📊 Total Stock per Product")
 total_stock_df = load_table("""
@@ -150,9 +147,7 @@ low_stock_df = load_table("""
 """)
 st.dataframe(low_stock_df)
 
-# -----------------------
-# 5️⃣ Insert New Data Forms
-# -----------------------
+# 5️ Insert New Data Forms
 
 st.subheader("➕ Add New Product")
 with st.form("add_product_form"):
